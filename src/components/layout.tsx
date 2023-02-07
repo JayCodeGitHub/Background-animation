@@ -1,3 +1,4 @@
+import Background from "./background";
 import NavBar from "./navbar";
 
 interface LayoutProps {
@@ -7,6 +8,7 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   return (
     <>
+      <Background />
       <NavBar />
       <main>{children}</main>
     </>
