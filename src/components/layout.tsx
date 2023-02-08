@@ -10,7 +10,7 @@ function Layout({ children }: LayoutProps) {
     <>
       <Background />
       <NavBar />
-      <main>{children}</main>
+      {children}
     </>
   );
 }
