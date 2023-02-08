@@ -15,7 +15,13 @@ export default function About() {
           </motion.h1>
         </span>
       </motion.header>
-      <section className="pb-10 text-xl text-white px-36">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.25, ease: "easeInOut", delay: 0.25 }}
+        exit={{ opacity: 0 }}
+        className="pb-10 text-xl text-white px-36"
+      >
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Potenti
@@ -137,7 +143,7 @@ export default function About() {
           elementum tempus egestas. Ut consequat semper viverra nam libero justo
           laoreet sit amet.
         </p>
-      </section>
+      </motion.section>
     </main>
   );
 }
