@@ -1,9 +1,20 @@
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
     <main>
-      <header className="flex items-center w-full pl-8 text-5xl text-white h-96">
-        <h1>About</h1>
-      </header>
+      <motion.header className="flex items-center w-full pl-8 text-5xl text-white h-96">
+        <span className="overflow-hidden">
+          <motion.h1
+            initial={{ x: "-100%" }}
+            animate={{ x: "0%" }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            exit={{ x: "-100%" }}
+          >
+            About
+          </motion.h1>
+        </span>
+      </motion.header>
       <section className="pb-10 text-xl text-white px-36">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

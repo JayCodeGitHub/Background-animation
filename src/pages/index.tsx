@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -11,7 +12,16 @@ export default function Home() {
       </Head>
       <main>
         <header className="flex items-center w-full pl-8 text-5xl text-white h-96">
-          <h1>Home</h1>
+          <span className="overflow-hidden">
+            <motion.h1
+              initial={{ x: "-100%" }}
+              animate={{ x: "0%" }}
+              transition={{ duration: 0.25, ease: "easeInOut" }}
+              exit={{ x: "-100%" }}
+            >
+              Home
+            </motion.h1>
+          </span>
         </header>
         <section className="pb-10 text-xl text-white px-36">
           <p>
