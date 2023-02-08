@@ -39,7 +39,7 @@ function ParticlesComponent() {
           },
           particles: {
             color: {
-              value: "#2233ff",
+              value: "#006AFF",
             },
             links: {
               color: "#ffffff",
